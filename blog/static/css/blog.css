@@ -2,13 +2,16 @@ a.lg {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	color: #fafafa;
 }
+
 nav li a {
 	color: #fafafa;
 }
 
+
 li a:hover {
 	color:  black;
 }
+
 
 section.s1 {
 	min-height: 500px;
