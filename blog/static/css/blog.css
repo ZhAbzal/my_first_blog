@@ -1,95 +1,17 @@
-body{
-	background-color: red;
+a.lg {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #fafafa;
 }
-.page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+nav li a {
+	color: #fafafa;
 }
 
-.content {
-    margin-left: 40px;
+li a:hover {
+	color:  black;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+section.s1 {
+	min-height: 500px;
+	padding-top: 58px;
+	background-image: url("{% static 'images/Broadway.jpg' %}");
 }
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h2 a, .post h2 a:visited {
-    color: #000000;
-}
-
-p{
-	background-color:orange;
-	font-size: 20px;
-}
-
-
-body {
-  background-color: lightblue;
-
-}
-
-h1 {
-	font-weight: 200;
-	font-size: 3rem;
-	color: white;
-	text-align: center;
-}
-
-.accordion {
-	max-width: 400px;
-	background: white;
-	margin: 0 auto;
-  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
-}
-
-.accordion-header {
-	border-bottom: 1px solid #DDE0E7;
-	color: #2a313a;
-	cursor: pointer;
-	font-weight: 700;
-	padding: 1.5rem;
-}
-
-.accordion-header:hover {
-	background: #F6F7F9;
-}
-
-.accordion-content {
-	display: none;
-	border-bottom: 1px solid #DDE0E7;
-	background: #F6F7F9;
-	padding: 1.5rem;
-	color: #4a5666;
-}
-
