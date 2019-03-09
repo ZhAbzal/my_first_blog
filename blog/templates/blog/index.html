@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{%static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="{%static 'main.js' %}"></script>
+</head>
+<body>
+      <header style="background-image: {% static 'images/wallpaper-page.webp' %}"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 text-center" style="margin: auto">
+                  <h1 class="title">The biggest city in the world - New York</h1>
+                  <hr>
+              </div>
+
+              <div class="col-md-6 text-center" style="margin: auto; padding-top: 30px;">
+                  <p class="wl">США</p>
+                  <span class="br-s"></span>
+                  <p class="wl">Нью-Йорк</p>
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <div id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+          <a class="navbar-brand" href="file:///C:/programming/final%20project/index.html" style="font-style: italic">New York news (NYN)</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="news" target="_blank">Новости<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">Компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=" #travel ">Авиабилеты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Видео</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="send">Заявки</a>
+                </li>
+            </ul>
+
+          </div>
+        </nav>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+
+        <section>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 carousel" style="margin: auto">
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="{% static 'images/images/wallpaper-first.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="{% static 'images/images/wallpaper-second.webp' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="{% static 'images/images/wallpaper-third.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="{% static 'images/images/manhattan.jpg'%}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="{% static 'images/images/winter-er.jpg' %}" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="{% static 'images/images/wallpaper-third.jpg' %}" class="d-block w-100" alt="...">
+                             </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                  </div> 
+
+                  <div class="col-md-10" style="margin: auto">
+                    <h3 class="title text-center">Город Нью-Йорк (New York City)</h3>
+                      <p class="text-center"><a class="" href="">Краткая информация о городе</a></p>
+                  Нью-Йорк — пожалуй, самый известный город в мире, в котором сосредоточены финансовые 
+                  учреждения, многочисленные исторические и культурные достопримечательности, музеи, 
+                  магазины, театры и многое другое. Это шумный и яркий город небоскребов и свободы, 
+                  который многим знаком по обилию кинофильмов и фото, где действие разворачивается на 
+                  его улицах. Здесь столько возможностей, сколько можно вообразить. От Таймс-сквер до
+                   самого темного уголка Бронкса — царство крайностей. От русского анклава в Бруклине 
+                   на Брайтон-Бич до филиала Южной Америки в Квинсе — сообщества из любой страны мира.
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <section class="second">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center" style="margin: auto">
+                  <h2 class="title">Видео Нью-Йорк</h2>
+                 <div class="col-md-8 text-center" style="margin: auto">
+                  <iframe src="https://www.youtube.com/embed/TmDKbUrSYxQ" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="third">
+          <div class="container" style="padding-top: 20px;">
+            <div class="row">
+                <div class="col-md-10" style="margin: auto">
+                  <div class="col-md-6 text-center" style="margin: auto;">
+                    <h2 class="title">Туризм в Нью-Йорке</h2>
+                  </div>
+                  <p class="information">
+                    Туризм занимает важное место в жизни Нью-Йорка. В 2010 году его посетили 48,7 миллионов
+                     туристов, в том числе 39 миллионов американцев и 9,7 миллионов — из других стран мира. 
+                     Нью-Йорк является самым привлекательным городом для туристов, приезжающих в Америку 
+                     из-за рубежа.
+                    Одними из самых заметных достопримечательностей города являются статуя Свободы, 
+                    Эмпайр-стейт-билдинг, остров Эллис, театры Бродвея, музеи, такие как музей Метрополитен, 
+                    и другие достопримечательности, включая Центральный Парк, Рокфеллер-центр, Таймс-сквер, 
+                    Бронксский зоопарк, Ботанический сад Нью-Йорка, Пятая и Медисон-авеню, а также такие события, 
+                    как Парад Хэллоуин в Гринвич-Виллидж и Кинофестиваль Трайбека. 
+                  </p>
+                  <div class="image">
+                  <img class="fons" style="min-width: 350px" src="{% static 'images/people/people-1.jpg' %}">
+                  <img class="fons" style="width: 350px" src="{% static 'images/people/people-2.jpg' %}">
+                  <img class="fons" style="width: 350px" src="{% static 'images/people/people-3.jpg' %}">
+                  <img class="fons" style="min-width: 350px" src="{% static 'images/people/people-4.jpg' %}">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fourth">
+          <div class="container" style="padding-top: 20px;">
+            <div class="row">
+              <div class="col-md-5 text-center" style="margin: auto">
+                <h2 class="title">Достопримечательности Нью-Йорка</h2>
+              </div> 
+              <div class="col-md-10 text-center" style="display: flex; flex-wrap: wrap; margin: auto;">
+                  <div class="card" style="width: 18rem;">
+                      <img src="{%static 'images/images/nyc.jpg'%}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Статуя Свободы</h5>
+                      <p class="card-text">
+                          Самый узнаваемый во всем мире символ Нью-Йорка и Соединенных Штатов — монументальная статуя Свободы.
+                      </p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="{% static 'images/images/brooklyn-2.png' %}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Бруклин</h5>
+                      <p class="card-text">
+                          Второй по популярности район в Нью-Йорке после Манхэттена, в котором проживает 2,5 миллиона человек.
+                      </p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+                  
+                  <div class="card" style="width: 18rem;">
+                      <img src="{%static 'images/images/manhattan-2.jpg' %}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Манхэттен</h5>
+                      <p class="card-text">
+                          Манхэттен по праву называют сердцем Нью-Йорка.
+                          Именно здесь находится знаменитая улица Бродвей 
+                      </p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="{%static 'images/images/wall-street.jpg' %}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Уолл Стрит</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="{% static 'images/images/braiton.jpg' %}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Брайтон-Бич</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+                    
+                  <div class="card" style="width: 18rem;">
+                      <img src="{% static 'images/images/park.jpg' %}" style="min-height: 130px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Центральный парк Нью-Йорк</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of</p>
+                      <a href="#" class="btn btn-primary">Узнать больше</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4" style="margin: auto; margin-top: 15px;">
+                      <a href="file:///C:/Users/%D0%B0%D0%BB%D1%81%D0%B5%D1%80/Desktop/djangoproject/blog/templates/blog/sight.html" target="_blank" class="btn btn-primary more">Узнать больше</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fifth">
+            <div class="container">
+                <div class="row">
+                    <div id="travel" class="col-md-8 text-center" style="margin: auto; padding-top: 20px;">
+                        <h3 class="title">Спецпредложения на авиабилеты</h3>
+                    </div>
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer class="page-footer font-small special-color-dark pt-4" style="background-color: #263238; margin-top: 20px;">
+
+    <div class="container">
+
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="" class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3" style="color: #fafafa">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+
+  </footer>
+</body>
+</html>
+
+
